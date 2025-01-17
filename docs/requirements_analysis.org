@@ -17,7 +17,7 @@ user’s workflow, making it an all-in-one productivity tool.
 
 * Main Goals
 + Easy to use for everyone. Even people who don't know what is org mode.
-+ 
++
 
 * Requirements
 ** Basic Text Manipulation Facilities
@@ -61,13 +61,13 @@ save actual image and show downsized version in the note.
 ** toc
 ** narrowing
 ** code snippet
-code editor, auto indent, code prettify 
+code editor, auto indent, code prettify
 ** drawer
 :DRAWER:
 text in the drawer
 :END:
 ** referencing & linking to other notes, part of other notes, urls, files
-link abbreviation 
+link abbreviation
 ** caption
 ** fuzzy search
 ** search using regular expressions even inside notes
@@ -108,7 +108,7 @@ Features listed here are the core of the application. They define what the
 application is, without these features the application is useless and users can
 not even try it.
 ** Other Features
-These feature are helpful. Without them application works, but with them users are more comfortable and have more performance in ther job. 
+These feature are helpful. Without them application works, but with them users are more comfortable and have more performance in ther job.
 *** export
 + to pdf
 + to word
@@ -119,11 +119,11 @@ simplest possible version history
 *** auto completion
 Semantic auto completion
 *** ai
-*** personal wiki 
-providing users some features to help them create their personal wiki. They can export this wiki to HTML files to use on the web. 
+*** personal wiki
+providing users some features to help them create their personal wiki. They can export this wiki to HTML files to use on the web.
 *** embedded file preview
-*** encryption 
-*** citation 
+*** encryption
+*** citation
 bibliography
 *** Focus Mode
 dims everything but the current sentence, helping you stay focused.
@@ -141,26 +141,26 @@ like org-roam-ui
 *** Performance
 *** Learn-ability
 
-
-** Subsystems & Their Roles 
-*** Core Component 
-    + Core Primitives 
-      fast and high performance primitive functions 
-      written in c++. 
-    + Lisp Interpreter 
-    + Lisp Libraries 
-    + Resource Manager 
+** Subsystems & Their Roles
+*** Core Component
+    + Core Primitives
+      fast and high performance primitive functions
+      written in c++.
+    + Lisp Interpreter
+    + Lisp Libraries
+    + Resource Manager
     + Buffer Manager
-    + Command Dispatcher 
-*** User Interface Component 
+    + Command Dispatcher
+*** User Interface Component
     + Syntax Highlighter
     + Theme Manager
     + Input Handler
-*** Resource Manager 
-    + Memory Manager 
-    + Energy Aware Memory Management 
+*** Resource Manager
+    + Memory Manager
+    + Energy Aware Memory Management
     + caching
     + paging
     + low resolution image loading
     + video and audio loading
 *** OS Layer
+*** Help System
