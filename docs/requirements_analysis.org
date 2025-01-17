@@ -1,3 +1,142 @@
+#+STARTUP: overview
 #+TITLE: Orgulous Requirements Analysis
+#+SUBTITLE: Personal note-taking and knowledge management.
 
-+ Slogan :: Personal note-taking and knowledge management
+Orgulous is a distraction-free note-taking app built on the syntax and
+functionalities of Org mode, designed to streamline organization and keep users
+focused.
+
+This app provides an intelligent, distraction-free environment for users to
+unlock the full potential of Org mode’s capabilities. It combines task
+management, agenda planning, and time tracking in a streamlined, minimalistic
+interface that makes advanced functionality accessible. With features like
+real-time syntax assistance, automated task prioritization, and dynamic
+previews, users can stay organized without clutter. Cross-platform
+synchronization and deep customization options ensure the app adapts to each
+user’s workflow, making it an all-in-one productivity tool.
+
+* Main Goals
++ Easy to use for everyone. Even people who don't know what is org mode.
++ 
+
+* Requirements
+** Basic Text Manipulation Facilities
++ bold
++ italic
++ underlined
++ strikethrough
++ Subscripts
++ Superscripts
++ highlight
++ selection
++ select all
++ copy
++ cut
++ paste
++ undo
++ redo
+** Move Through Text
++ next character
++ previous character
++ next word
++ previous word
++ next sentence
++ previous sentence
++ next line
++ previous line
++ start of the current line
++ end of the current line
++ start of the current sentence
++ end of the current sentence
++ start of the current paragraph
++ end of the current paragraph
+** Comment
+Comments are not displayed in export/preview version of the text.
++ single line
++ multiline
+** table
+table editor
+** image
+save actual image and show downsized version in the note.
+** toc
+** narrowing
+** code snippet
+code editor, auto indent, code prettify 
+** drawer
+:DRAWER:
+text in the drawer
+:END:
+** referencing & linking to other notes, part of other notes, urls, files
+link abbreviation 
+** caption
+** fuzzy search
+** search using regular expressions even inside notes
+** tagging
+** fleeting/permanent notes
+** organizing notes in notebooks
+every notebook contains notes & notebooks
+** footnote
+** date & time
+** simple task management
+every note can link to some other notes. we can think of a note as a task and linked notes as some subtasks.
+TODO, DONE, deadline, priority, etc.
+** keybindings
+emacs and vim keys
+** read & viewed counter
+** folder/project view panel
+** markup language
+org markup is suitable.
+i prefer to not have a preview mode. i think it is redundant. instead of preview mode we can use sth like this: for example when we want a italic word we use /italicword/ and the application omits two slashes from the beginning and end of the word but shows it italic. the saved text is "/italicword/" but in the application we can see just italicword which is italic. by moving cursor at the end of word and hitting backspace to remove one character the word becomes /italicword. or by moving cursor at the beginning of the word and hitting delete key the word becomes italicword/. we can do things like this for headings and other text elements too.
+** visibility cycling
+** Word Count
+every user can set a limit on word count or charachter count of notes. this can help them use small and short notes. this feature can be set using template system.
+** template system
+use template in creating notes. every note can have a different note template. templates can be defined. everytime a note is captured, a template can be selected.
+** capturing
+** theming
+** sharing notes
+** Fonts
+*** line wrap
+*** Defining Text Hierarchy
++ paragraph
++ sentence
++ headings
++ ordered lists
++ unordered lists
+** Core Features
+Features listed here are the core of the application. They define what the
+application is, without these features the application is useless and users can
+not even try it.
+** Other Features
+These feature are helpful. Without them application works, but with them users are more comfortable and have more performance in ther job. 
+*** export
++ to pdf
++ to word
++ to html
+*** versioning notes
+simplest possible version history
+*** multiuser editing (live editing)
+*** auto completion
+Semantic auto completion
+*** ai
+*** personal wiki 
+providing users some features to help them create their personal wiki. They can export this wiki to HTML files to use on the web. 
+*** embedded file preview
+*** encryption 
+*** citation 
+bibliography
+*** Focus Mode
+dims everything but the current sentence, helping you stay focused.
+*** spell check
+*** next word suggestion
+*** trash
+*** export notes graph
+like org-roam-ui
+*** embedded terminal
+*** auto save
+*** org-transclusion
+
+* Architecture
+** Architecture Characteristics
+*** Performance
+*** Learn-ability
