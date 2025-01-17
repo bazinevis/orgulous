@@ -140,3 +140,27 @@ like org-roam-ui
 ** Architecture Characteristics
 *** Performance
 *** Learn-ability
+
+
+** Subsystems & Their Roles 
+*** Core Component 
+    + Core Primitives 
+      fast and high performance primitive functions 
+      written in c++. 
+    + Lisp Interpreter 
+    + Lisp Libraries 
+    + Resource Manager 
+    + Buffer Manager
+    + Command Dispatcher 
+*** User Interface Component 
+    + Syntax Highlighter
+    + Theme Manager
+    + Input Handler
+*** Resource Manager 
+    + Memory Manager 
+    + Energy Aware Memory Management 
+    + caching
+    + paging
+    + low resolution image loading
+    + video and audio loading
+*** OS Layer
