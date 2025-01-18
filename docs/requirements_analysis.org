@@ -137,6 +137,42 @@ like org-roam-ui
 *** org-transclusion
 
 * Architecture
++ modes :: major mode and minor mode
+  every buffer has only one major mode and can have multiple minor modes. installing a mode adds some commands to commands list as well as some key bindings to those commands. modes can change look of the buffer like fill mode and syntax highlighting and showing white spaces in the buffer.
+
+  commands can be represented with Command design pattern.
+
+  Every buffer is decorated with chain of responsibilities.
+
+  Every modes for text files do at least three things:
+  - font-lock (syntax highlighting)
+  - setup syntax table
+  - manage indentation
+  and probably more, like providing useful key-bindings and interactions with
+  other buffers.
+
+  IT MEANS EVERY ASPECT OF A BUFFER IS MANAGED BY MODES.
+
+  Some buffers are not
+
+  A buffer is a Lisp object containing text to be edited. Buffers are used to
+  hold the contents of files that are being visited; there may also be buffers
+  that are not visiting files(like dired). Although several buffers normally
+  exist, only one buffer is designated the current buffer at any time. Most
+  editing commands act on the contents of the current buffer. Each buffer,
+  including the current buffer, may or may not be displayed in any windows.
+  Buffers in Emacs editing are objects that have distinct names and hold text
+  that can be edited. Buffers appear to Lisp programs as a special data
+  type. You can think of the contents of a buffer as a string that you can
+  extend; insertions and deletions may occur in any part of the buffer. See
+  Text. A Lisp buffer object contains numerous pieces of information. Some of
+  this
+information is directly accessible to the programmer through variables, while
+other information is accessible only through special-purpose functions. For
+example, the visited file name is directly accessible through a variable, while
+the value of point is accessible only through a primitive function.
+
+
 ** Architecture Characteristics
 *** Performance
 *** Learn-ability
@@ -151,6 +187,8 @@ like org-roam-ui
     + Resource Manager
     + Buffer Manager
     + Command Dispatcher
+    + display manager
+    + buffer manager
 *** User Interface Component
     + Syntax Highlighter
     + Theme Manager
