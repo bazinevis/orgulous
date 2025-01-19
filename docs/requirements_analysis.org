@@ -19,6 +19,10 @@ user’s workflow, making it an all-in-one productivity tool.
 + Easy to use for everyone. Even people who don't know what is org mode.
 +
 
+
+
+USE OF MACRO 
+
 * Requirements
 ** Basic Text Manipulation Facilities
 + bold
