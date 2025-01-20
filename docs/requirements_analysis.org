@@ -2,6 +2,13 @@
 #+TITLE: Orgulous Requirements Analysis
 #+SUBTITLE: Personal note-taking and knowledge management.
 
+every functionality that org has plus every text and file manipulation capabilities that emacs has. every thing that is needed for a knowledge management system plus Todo application.
+1. knowledge management 
+2. todo list
+3. note taking
+these three items i want in my app
+
+
 Orgulous is a distraction-free note-taking app built on the syntax and
 functionalities of Org mode, designed to streamline organization and keep users
 focused.
