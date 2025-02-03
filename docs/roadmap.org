@@ -1,0 +1,5 @@
+#+TITLE: Orgulous Roadmap
+
+* The Main Goals
+** [#A] Simplicity
+Non programmers can use it without any problems. 

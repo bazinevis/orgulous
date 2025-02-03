@@ -1,0 +1,130 @@
+#+TITLE: ORGULOUS ROADMAP
+
+* NOTES USING ORGULOUS 
+Orgulous is a distraction-free note-taking app built on the syntax and functionalities of Org mode, designed to streamline organization and keep users focused.
+
+This app provides an intelligent, distraction-free environment for users to unlock the full potential of Org mode’s capabilities. It combines task management, agenda planning, and time tracking in a streamlined, minimalistic interface that makes advanced functionality accessible. With features like real-time syntax assistance, automated task prioritization, and dynamic previews, users can stay organized without clutter. Cross-platform synchronization and deep customization options ensure the app adapts to each user’s workflow, making it an all-in-one productivity tool.
+
+
+
+ChatGPT
+
+You said:
+I want to develop an app based on orgmode with intelligent user interface which can help users have better experience with what org mode is capable of. As we know org mode is not only about a concise and robust syntax but about a set of functionalities that with the help of that syntax can do more.
+This app is about org mode and all that functionalities. This app tries to be distraction free. 
+ChatGPT said:
+ChatGPT
+Memory updated
+Your idea sounds exciting! Creating an intelligent, distraction-free app around Org mode could provide users with a streamlined and powerful environment. Here are some considerations and features that could make it stand out:
+
+Enhanced Syntax Handling: Make the Org mode syntax more intuitive, with suggestions, auto-completions, and context-sensitive actions that guide users in building out notes, to-do lists, or agenda items.
+
+Integrated Functionalities: Org mode is known for its capabilities beyond simple note-taking, like task management, agenda, time-tracking, and even literate programming. Embedding these features with smart prompts or easy toggles could help users uncover the full potential of Org mode.
+
+Distraction-Free UI: You might design a minimalistic and adaptable interface that removes any unnecessary clutter, while offering just-in-time assistance or tutorials when users need it.
+
+Smart Task and Project Management: Use AI to suggest task prioritization, deadlines, or recurring tasks based on users’ behavior or content. You could even automate reminders or nudge users toward important tasks.
+
+Dynamic Document Previewing: Real-time document previewing could be invaluable, especially for those working with more complex Org documents (e.g., task trees, tables, and code blocks).
+
+Cross-Platform Synchronization: Many users would benefit from seamless access across devices, with their data always in sync.
+
+Deep Customization Options: Org mode users often value personalization. Adding themes, shortcuts, or layouts that allow them to tailor the interface to their needs could be well-received.
+
+Let me know if you want to explore any of these features in detail!
+
+
+
+
+
+
+You said:
+I want a paragraph of this app description.
+ChatGPT said:
+ChatGPT
+This app is designed to provide an intelligent, distraction-free environment for users to leverage the full potential of Org mode’s capabilities. With a minimalistic, intuitive interface, the app simplifies complex functionalities—such as task management, agenda planning, time tracking, and literate programming—while preserving Org mode’s powerful syntax. By offering real-time syntax assistance, automated task prioritization, and dynamic previews, it enables users to seamlessly organize, manage, and execute projects without unnecessary clutter. The app is highly customizable, allowing users to tailor themes, shortcuts, and layouts to their preferences. Additionally, cross-platform synchronization ensures that users can access their data effortlessly across devices, making this app an all-in-one productivity tool that adapts to individual needs.
+
+* APP DESCRIPTION 
+** TOOLS & LIBRARIES 
+  Qt framework 
+** FEATURE LIST
+** ARCHITECTURE 
+** LICENSE 
+   GPL
+
+* MILESTONES 
+** #001
+
+
+
+
+
+
+
+------
+
+* Noteworthy
+** Notes
+#+BEGIN_QUOTE
+Note-taking is the practice of recording information from different sources and platforms. By taking notes, the writer records the *essence* of the information, freeing their mind from having to recall everything. Notes are commonly drawn from a transient source, such as an oral discussion at a meeting, or a lecture, in which case the notes may be the only record of the event. Since the advent of writing and literacy, notes traditionally were almost always handwritten (often in notebooks), but the introduction of notetaking software has made digital notetaking possible and widespread. Note-taking is a foundational skill in *personal knowledge management*.
+--- [[https://en.m.wikipedia.org/wiki/Note-taking][wikipedia]]
+#+END_QUOTE
+
+*** What is a note?
+A note is preferably a small piece of text which contain textual & visual elements as well as references to other notes. Interconnected notes can be used as a personal knowledge manager or personal wiki. 
+
+*** What a note taking application can do?
+Fast noting, note everywhere, small mnemonic to remind sth important. task management. reminder.
+
+*** What a note taking application can not do?
+A note taking app is not intended to be used for writing publishables like a book or an article but it can be helpful in creating those. basic export system will be used to publish a note but advanced features like those in latex is not supported.
+
+** Noting Application 
+Noteworthy is an easy to use, high quality, configurable, distraction-free, full-featured, cross platform, extendable note taking application which helps users by providing some handy services.
+*** Ease of use
++ simple user interface
++ capable of keyboard only editing
++ lowest possible startup time (starting immediately)
++ same interfaces in different platforms
+
+*** Quality
+Intensive testing before deployment to check stability:
++ Unit testing
++ Integrity testing
+
+*** Distraction free
+It should have a mode with no buttons, menus and options. User will be able to edit notes only with a blinking (?) cursor.
++ This mode must have a gesture to return back to normal mode.
+
+*** Full featured
++ Basic text editing tools
++ Embedding images, videos and code snippet into text blocks
++ Referencing to other notes
++ Reference to URLs
+
+*** Multiplatform development
+supported platforms are:
++ Linux
++ Windows
++ macOS
++ Android
++ iOS
++ Web
+
+*** Extendablity
+Noteworthy should have a plugin/extension system to give developers a SDK to extend functionalities to the platform. In order to give this ability, the System should be designed extendable.
+
+*** Configurability
++ file based configuration
++ providing a web based application to help users make their own config file, using images, GIFs, videos.
++ Configuration hierarchy
++ Default configurations
+
+
+*** Considerations
++ multi threading
++ using GPU power
++ lazy loading
++ battery power saving
++ Component based programming
++ plugin based programming

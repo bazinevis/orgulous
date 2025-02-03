@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/orgulous.dir/link.d CMakeFiles/orgulous.dir/main.cpp.o -o orgulous  /home/bazinevis/projects/orgulous/source_code/librmlui.a

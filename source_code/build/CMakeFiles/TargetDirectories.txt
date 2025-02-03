@@ -1,0 +1,3 @@
+/home/bazinevis/projects/orgulous/source_code/build/CMakeFiles/orgulous.dir
+/home/bazinevis/projects/orgulous/source_code/build/CMakeFiles/edit_cache.dir
+/home/bazinevis/projects/orgulous/source_code/build/CMakeFiles/rebuild_cache.dir
