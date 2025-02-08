@@ -1,0 +1,58 @@
+@startuml
+skinparam backgroundColor #EEEBDC
+
+/'
+Noncopymovable Interface
+can't copy and move these classes
+'/
+interface NonCopyMovable
+/'
+RenderInterface abstract class
+'/
+abstract class RenderInterface {
+        {abstract} +CompiledGeometryHandle CompileGeometry(Span<const Vertex> vertices, Span<const int> indices)
+
+        {abstract} +void RenderGeometry(CompiledGeometryHandle geometry, Vector2f translation, TextureHandle texture)
+
+        {abstract} +void ReleaseGeometry(CompiledGeometryHandle geometry)
+
+        {abstract} +TextureHandle LoadTexture(Vector2i &texture_dimensions, const String &source)
+
+        {abstract} +TextureHandle GenerateTexture(Span<const byte> source, Vector2i source_dimensions)
+
+        {abstract} +void ReleaseTexture(TextureHandle texture)
+
+        {abstract} +void EnableScissorRegion(bool enable)
+
+        {abstract} +void SetScissorRegion(Rectanglei region)
+
+        {virtual} +void EnableClipMask(bool enable);
+
+        virtual +void RenderToClipMask(ClipMaskOperation operation, CompiledGeometryHandle geometry, Vector2f translation);
+
+        virtual +void SetTransform(const Matrix4f *transform);
+
+        virtual +LayerHandle PushLayer();
+
+        virtual +void CompositeLayers(LayerHandle source, LayerHandle destination, BlendMode blend_mode, Span<const CompiledFilterHandle> filters);
+
+        virtual +void PopLayer();
+
+        virtual +TextureHandle SaveLayerAsTexture();
+
+        virtual +CompiledFilterHandle SaveLayerAsMaskImage();
+
+        virtual +CompiledFilterHandle CompileFilter(const String &name, const Dictionary &parameters);
+
+        virtual +void ReleaseFilter(CompiledFilterHandle filter);
+
+        virtual +CompiledShaderHandle CompileShader(const String &name, const Dictionary &parameters);
+
+        virtual +void RenderShader(CompiledShaderHandle shader, CompiledGeometryHandle geometry, Vector2f translation, TextureHandle texture);
+
+        virtual +void ReleaseShader(CompiledShaderHandle shader);
+}
+
+
+NonCopyMovable <|-- RenderInterface
+@enduml

@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.31)
+project(Orgulous)
+
+add_executable(orgulous src/main.cpp)
+find_package(SDL2 REQUIRED)
+find_package(SDL2_image REQUIRED)
+find_package(Freetype REQUIRED)
+include_directories(${CMAKE_SOURCE_DIR}/includes)
+target_include_directories(orgulous PUBLIC ${CMAKE_SOURCE_DIR} ${SDL2_INCLUDE_DIRS} ${FREETYPE_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
+target_link_libraries(orgulous PUBLIC ${CMAKE_SOURCE_DIR}/librmlui.a ${SDL2_LIBRARIES} ${FREETYPE_LIBRARIES} SDL2_image::SDL2_image)
